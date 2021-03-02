@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap');
+
+:root {
+    --primary: #161616;
+    --secondary: #80ba8e;
+    --gray: #f2f2f2;
+    --darkgray: #bbbbbb;
+    --white: #ffffff;
+    --text: #777777;
+    --fontFamily: 'Roboto', sans-serif;
+    --fontSize: 15px;
+    --transition: .4s ease;
+    --padding: 100px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text);
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+button {
+    padding: 15px 30px;
+    background: var(--secondary);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+button:hover {
+    transition: var(--transition);
+    cursor: pointer;
+    background: var(--darkgray);
+}
+
+/***header***/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header hgroup {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+
+hgroup h1 {
+    font-size: 8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-shadow: 0 0 5px var(--primary);
+}
+
+hgroup h5 {
+    color: var(--white);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+/***navbar***/
+nav {
+    padding: 20px 0;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px var(--primary);
+}
+
+nav ul li a:hover {
+    color: var(--darkgray);
+    transition: var(--transition);
+}
+
+/***intro***/
+.intro {
+    padding: var(--padding);
+    text-align: center;
+    background: var(--gray);
+}
+
+.intro h2 {
+    padding-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.intro a {
+    color: var(--secondary);
+}
+
+.intro hr {
+    border: none;
+    background: #dddddd;
+    height: 1px;
+    margin: 50px auto;
+}
+
+.intro article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro article div {
+    flex: 0 0 31%;
+}
+
+.intro i {
+    margin-bottom: 30px;
+    font-size: 5rem;
+    color: var(--darkgray);
+}
+
+.intro h3 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.intro p {
+    padding: 30px 0;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+/***blog***/
+.blog {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog article {
+    flex: 0 0 48%;
+    text-align: center;
+}
+.blog img {
+    width: 100%;
+}
+.blog h3 {
+    padding-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.blog p{
+    font-weight: 300;
+    padding: 50px 0;
+}
+
+/***blockquote***/
+.blockquote {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blockquote blockquote {
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: .7;
+}
+
+/***footer***/
+footer {
+    padding: var(--padding);
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+footer hr {
+    border: none;
+    background: var(--darkgray);
+    height: 1px;
+    margin: 50px auto;
+}
+footer h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+footer p {
+    padding: 30px 0;
+    font-size: 1.2rem;
+    color: var(--darkgray);
+}
+.copy {
+    font-size: .8rem;
+}
+footer a {
+    color: var(--darkgray);
+    margin: 10px;
+    font-size: 1.5rem;
+}
+footer a:hover {
+    color: var(--white);
+    transition: var(--transition);
+}
