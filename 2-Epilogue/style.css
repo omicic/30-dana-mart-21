@@ -3,12 +3,13 @@
 :root {
     --primary: #f4f4f4;
     --white: #ffffff;
-    --font-color: #444444;
+    --font-color: #383838;
     --font-family: 'Source Sans Pro', sans-serif;
     --logo: 'Pacifico', cursive;
     --padding: 80px 0;
     --margin: 30px 0;
     --font-size: 18px;
+    --transition: .3s ease;
 }
 
 /***basic styles***/
@@ -40,12 +41,20 @@ h5 {
 
 button {
     padding: 15px 40px;
+    border: 2px solid var(--font-color);
     border-radius: 5%;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    background: var(--white);
+    letter-spacing: 4px;
+    background: transparent;
     font-size: 0.7rem;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid red;
+    color: red;
+    transform: var(--transition);
 }
 
 /***header***/
@@ -73,7 +82,7 @@ header hgroup h1 {
 }
 
 header hgroup p {
-    color: var(--font-color);
+    color: var(--primary);
     text-transform: uppercase;
     font-size: 1.1rem;
     letter-spacing: 4px;
@@ -97,16 +106,22 @@ header hgroup hr {
 
 .intro i {
     border: 2px solid var(--font-color);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     font-size: 2rem;
     color: var(--font-color);
-    padding: 30px;
+    padding: 40px;
     border-radius: 50%;
-
 }
 
 .intro h2 {
     margin: var(--margin);
     font-size: 2rem;
+    color: var(--font-color);
 }
 
 .intro p {
