@@ -6,7 +6,7 @@
     --font-color: #383838;
     --font-family: 'Source Sans Pro', sans-serif;
     --logo: 'Pacifico', cursive;
-    --padding: 80px 0;
+    --padding: 100px 0;
     --margin: 30px 0;
     --font-size: 18px;
     --transition: .3s ease;
@@ -49,6 +49,7 @@ button {
     background: transparent;
     font-size: 0.7rem;
     cursor: pointer;
+    margin: var(--margin);
 }
 
 button:hover {
@@ -129,4 +130,61 @@ header hgroup hr {
     font-size: 1.2rem;
     font-weight: 100;
     letter-spacing: 0.7px;
+}
+
+/***footer***/
+.blog {
+    padding: 0px 0 100 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.holder {
+    overflow: hidden;
+}
+
+.blog article {
+    flex: 0 48%;
+    margin-bottom: 60px;
+
+}
+
+.featured-image {
+    position: relative;
+}
+
+.featured-image img {
+    width: 100%;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.featured-image h3 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-shadow: 0 0 3px black;
+}
+
+.blog .text {
+    background: var(--white);
+    text-align: center;
+    padding: 70px;
+    border-radius: 5px;
+}
+
+.blog a {
+    display: block;
+    text-decoration: none;
+}
+
+.blog a:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
 }
