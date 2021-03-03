@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+:root {
+    --primary: #f4f4f4;
+    --white: #ffffff;
+    --font-color: #444444;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --logo: 'Pacifico', cursive;
+    --padding: 80px 0;
+    --margin: 30px 0;
+    --font-size: 18px;
+}
+
+/***basic styles***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--primary);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+button {
+    padding: 15px 40px;
+    border-radius: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: var(--white);
+    font-size: 0.7rem;
+}
+
+/***header***/
+header {
+    background-image: url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header hgroup {
+    text-align: center;
+}
+
+header hgroup h1 {
+    font-family: var(--logo);
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+header hgroup p {
+    color: var(--font-color);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    margin: 30px 0;
+    font-weight: 200;
+}
+
+header hgroup hr {
+    border: none;
+    background: var(--white);
+    height: 1px;
+}
+
+/***intro***/
+.intro {
+    background: var(--white);
+    padding: var(--padding);
+    margin: 100px auto;
+    text-align: center;
+}
+
+.intro i {
+    border: 2px solid var(--font-color);
+    font-size: 2rem;
+    color: var(--font-color);
+    padding: 30px;
+    border-radius: 50%;
+
+}
+
+.intro h2 {
+    margin: var(--margin);
+    font-size: 2rem;
+}
+
+.intro p {
+    margin: var(--margin);
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 0.7px;
+}
