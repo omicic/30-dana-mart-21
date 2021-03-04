@@ -7,6 +7,8 @@
     --button-hover: #ee5072;
     --white: #ffffff;
     --button: #f32853;
+    --gray: #89898d;
+    --darkgray: #202020;
     --transition: .3s ease;
     --margin: 100px 0;
     --padding: 10px 0;
@@ -61,7 +63,7 @@ header {
     background: linear-gradient(rgba(29, 29, 29, 0.7), rgba(72, 72, 72, .9)), url(img/banner.jpg);
     background-position: center top;
     background-size: cover;
-    height: 70vh;
+    height: 120vh;
     background-attachment: fixed;
 }
 
@@ -123,4 +125,101 @@ header div p {
     color: var(--font-color);
     font-size: 1.8rem;
     padding: 50px 0;
+}
+
+/***intro***/
+.intro {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+
+}
+
+.intro article {
+    flex: 0 0 40%;
+    margin-right: 30px;
+    line-height: 1.8;
+}
+
+.intro article h2,
+.blog h2 {
+    color: var(--darkgray);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.intro article h4,
+.blog h4 {
+    color: var(--gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+.intro p {
+    font-weight: 300;
+}
+
+.intro p:first-child {
+
+    padding-bottom: 30px;
+}
+
+/***blog***/
+.blog {
+    background-color: var(--font-color);
+    padding-top: 100px;
+}
+
+
+.blog h2,
+.blog h4 {
+    text-align: center;
+}
+
+.blog article {
+
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+}
+
+.blog .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.blog .container div h3 {
+    background: var(--white);
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 40px 0;
+    box-shadow: 0px 0px 3px var(--gray);
+}
+
+.blog .container div img {
+    width: 100%;
+    display: block;
+}
+
+.blog .container div {
+    flex: 0 0 48%;
+}
+
+.blog .buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.blog button {
+    margin: 0 10px;
+    padding: 20px 40px;
 }
