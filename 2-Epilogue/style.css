@@ -36,6 +36,7 @@ h4,
 h5 {
     font-weight: 400;
     letter-spacing: 4px;
+    color: var(--font-color);
 }
 
 button {
@@ -90,7 +91,7 @@ header hgroup p {
     font-weight: 200;
 }
 
-header hgroup hr {
+hr {
     border: none;
     background: var(--white);
     height: 1px;
@@ -177,6 +178,7 @@ header hgroup hr {
     text-align: center;
     padding: 70px;
     border-radius: 5px;
+    letter-spacing: 1.5px;
 }
 
 .blog a {
@@ -187,4 +189,39 @@ header hgroup hr {
 .blog a:hover {
     transform: scale(1.1);
     transition: .5s ease;
+}
+
+/***footer***/
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    text-transform: uppercase;
+}
+
+footer p {
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+footer hr {
+    background: var(--font-color);
+    margin: 20px 900px;
+}
+
+footer .copy {
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: var(--font-color);
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: var(--red);
+    transition: var(--transition);
 }
