@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+
+:root {
+    --font-family: 'Raleway', sans-serif;
+    --font-size: 18px;
+    --font-color: #d1d1d6;
+    --button-hover: #ee5072;
+    --white: #ffffff;
+    --button: #f32853;
+    --transition: .3s ease;
+    --margin: 100px 0;
+    --padding: 10px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--font-color);
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background: var(--white);
+}
+
+button {
+    background-color: var(--button);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+a:hover {
+    transition: var(--transition);
+}
+
+/***header***/
+header {
+    background: linear-gradient(rgba(29, 29, 29, 0.7), rgba(72, 72, 72, .9)), url(img/banner.jpg);
+    background-position: center top;
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 70px;
+}
+
+header ul {
+    display: flex;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.logo span {
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header ul li a {
+    color: var(--font-color);
+    margin-left: 70px;
+    font-size: 1.2rem;
+}
+
+header ul li a:hover {
+    color: var(--white);
+    opacity: 1;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header div h1 {
+    font-size: 4rem;
+    color: var(--white);
+}
+
+header div p {
+    color: var(--font-color);
+    font-size: 1.8rem;
+    padding: 50px 0;
+}
