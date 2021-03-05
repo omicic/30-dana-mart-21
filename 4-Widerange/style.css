@@ -35,12 +35,22 @@ ul {
 .container {
     width: 65%;
     margin: 0 auto;
-    ;
 }
 
-/**********
-header styles
-***********/
+a {
+    color: var(--primary);
+}
+
+button {
+    background: var(--accents);
+    border: none;
+    padding: 15px 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/***header***/
 header {
     display: flex;
     background-image: url(img/bg.jpg);
@@ -101,38 +111,88 @@ article .icons i {
 
 }
 
-/****services****/
+/****service****/
 .service {
     background: var(--white);
     padding: 50px 0;
-    
 }
 
 .service .container {
     display: flex;
     flex: row;
     justify-content: space-between;
-   
-  
-}
-service article{
-    
 }
 
 .service .container div {
     flex: 0 0 24%;
 }
 
-.service .container div h3{
+.service .container div h3 {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 400;
+    margin-bottom: 30px;
+    
+}
+.service .container div img {
     margin-bottom: 20px;
-
+    width: 100%;
 }
 
 .service .container div p {
     font-weight: 300;
     margin-bottom: 50px;
-    
+    line-height: 180%;
 }
+
+/***blog***/
+.blog {
+    background: var(--lightgray);
+    padding: 70px 0;
+}
+
+.blog div {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog div h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.blog div h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blog .container div {
+    margin-left: 30px;
+}
+
+.blog .container div h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.blog .container div p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/***footer***/
+footer {
+    text-align: center;
+    margin: 50px;
+}
+
