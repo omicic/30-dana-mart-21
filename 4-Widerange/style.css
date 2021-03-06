@@ -40,6 +40,11 @@ ul {
 a {
     color: var(--primary);
 }
+section .info h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 150px 0 50px 0;
+}
 
 button {
     background: var(--accents);

@@ -10,9 +10,10 @@
     --font-family: 'Monteserrat', sans-serif;
     --font-size: 16px;
     --font-weight: 400;
-    --margin:30px 0;
-    --line-height:20px;
+    --margin: 30px 0;
+    --line-height: 20px;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -23,11 +24,13 @@ body {
     font-family: var(--font-family);
     background: var(--white);
     font-size: var(--font-size);
-  
+
 }
+
 ul {
     list-style: none;
 }
+
 .container {
     padding: 30px 70px;
 }
@@ -37,30 +40,36 @@ button {
     background: transparent;
     padding: 15px 40px;
     border-radius: 30px;
-    
+
+}
+
+section .info h3,
+section .statistic h3 {
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 /***header***/
 header {
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(img/header.jpg);
-    height: 120vh;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(img/header.jpg);
+    height: 70vh;
     background-position: center;
-    background-size: cover;   
+    background-size: cover;
     color: var(--white);
-    
+
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
 }
 
 header nav ul {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
-header h1{
+header h1 {
     font-size: 3rem;
 }
 
@@ -68,7 +77,7 @@ header h2 {
     font-weight: 400;
 }
 
-header h2 span{
+header h2 span {
     font-weight: 900;
 }
 
@@ -80,7 +89,7 @@ header nav ul a {
     letter-spacing: 1px;
 }
 
-header div {  
+header div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,14 +97,15 @@ header div {
     text-align: center;
 }
 
-header div p:nth-of-type(1){
+header div p:nth-of-type(1) {
     font-weight: 600;
     margin: 150px 0 30px 0;
 }
-header div p:nth-of-type(2){
+
+header div p:nth-of-type(2) {
     font-weight: 300;
     font-style: italic;
-    margin-top: 30px;  
+    margin-top: 30px;
 }
 
 /***info***/
@@ -103,9 +113,11 @@ section .info {
     display: flex;
     justify-content: space-between;
 }
+
 section .info div {
     flex: 0 0 60%;
 }
+
 section .info img {
     flex: 0 0 35%;
     width: 100%;
@@ -119,23 +131,59 @@ section .info h3 {
     font-size: 2rem;
     margin: 150px 0 50px 0;
 }
-section .info div p:nth-of-type(1){
+
+section .info div p:nth-of-type(1) {
     font-weight: 600;
 }
+
 section .info div hr {
     width: 20%;
     color: var(--pink);
     margin: var(--margin);
 }
-section .info div p:nth-of-type(2){
+
+section .info div p:nth-of-type(2) {
     font-weight: 300;
     font-size: .9rem;
     line-height: var(--line-height);
-    
+
 }
-section .info div p:nth-of-type(3){
+
+section .info div p:nth-of-type(3) {
     font-weight: 300;
     font-size: .9rem;
     line-height: var(--line-height);
     margin: var(--margin);
+}
+
+section .statistic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+}
+
+section .statistic div {
+    text-align: center;
+
+}
+
+section .statistic div {
+    text-align: center;
+
+}
+
+section .statistic div hr {
+    width: 30%;
+
+}
+
+section hr {
+    margin: 20px auto;
+    color: var(--gray);
+}
+
+section .statistic div p{
+    font-size: 0.9rem;
+    font-weight: 600;
 }
