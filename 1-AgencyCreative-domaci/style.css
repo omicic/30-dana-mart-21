@@ -52,7 +52,7 @@ section .statistic h3 {
 /***header***/
 header {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(img/header.jpg);
-    height: 70vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     color: var(--white);
@@ -136,7 +136,7 @@ section .info div p:nth-of-type(1) {
 }
 
 section .info div hr,
-section .about div hr{
+section .about div hr {
     width: 20%;
     color: var(--pink);
     margin: var(--margin);
@@ -181,7 +181,8 @@ section hr {
     color: var(--gray);
 }
 
-section .statistic div p {
+section .statistic div p,
+footer p {
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -192,11 +193,12 @@ section .about {
     justify-content: center;
     flex-direction: column;
 }
+
 section .about article {
     display: flex;
 }
 
-section .about article div{
+section .about article div {
     margin: 70px 20px 10px 600px;
     text-align: right;
 
@@ -204,7 +206,7 @@ section .about article div{
 
 section .about article div hr {
     position: relative;
-    left: 600px;
+    left: 450px;
     width: 50%;
 }
 
@@ -219,15 +221,17 @@ section .about article img {
     width: 370px;
     height: 250px;
 }
-section .about article:nth-child(even) div{
+
+section .about article:nth-child(even) div {
     margin: 70px 600px 10px 20px;
     text-align: left;
 }
 
-section .about article:nth-child(even){
+section .about article:nth-child(even) {
     flex-direction: row-reverse;
 }
-section .about article:nth-child(even) div hr{
+
+section .about article:nth-child(even) div hr {
     position: relative;
     left: -100px;
     width: 50%;
@@ -238,6 +242,7 @@ section .offer {
     display: flex;
     justify-content: space-evenly;
 }
+
 section .offer div {
     display: flex;
     flex-direction: column;
@@ -245,15 +250,18 @@ section .offer div {
     flex: 0 0 30%;
 }
 
-section .offer div h3{
+section .offer div h3,
+footer h3 {
     color: var(--pink);
     font-weight: 600;
     font-size: 1.3rem;
 }
+
 section .offer div p {
     font-weight: 300;
     font-size: .9rem;
 }
+
 section .offer img {
     box-shadow: 0 0 10px 10px rgb(201, 199, 199);
     border-radius: 20px;
@@ -268,45 +276,53 @@ section .offer img {
     justify-content: center;
     align-items: right;
 }
-.gallery article p{
+
+.gallery article p {
     font-weight: 600;
 }
-.gallery article hr{
+
+.gallery article hr {
     width: 30%;
     margin: var(--margin);
-    color: var(--pink);    
+    color: var(--pink);
 }
-.gallery .images div{
+
+.gallery .images div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
     background: var(--lightgray);
 }
-.gallery .images div img{
+
+.gallery .images div img {
     width: 100%;
     flex: 0 0 23%;
     margin: 20px auto;
 }
 
 /***contact***/
-.contact .contactform{
+.contact .contactform {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;  
+    align-items: center;
 }
+
 .contact .contactform div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     flex: 0 0 55%;
 }
-.contact .contactform div input{
+
+.contact .contactform div input {
     margin: 5px 0;
-    height: 40px;   
+    height: 40px;
 }
-.contact .contactform div textarea{
-    margin: 5px 0;  
+
+.contact .contactform div textarea {
+    margin: 5px 0;
 }
-.contact .contactform div button{
+
+.contact .contactform div button {
     width: 25%;
     margin-top: 50px;
 }
@@ -316,4 +332,49 @@ section .offer img {
     flex: 0 0 30%;
     box-shadow: 0 0 10px 10px rgb(201, 199, 199);
     border-radius: 20px;
+}
+
+/***footer***/
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    margin: var(--margin);
+}
+
+footer p {
+    margin: var(--margin);
+}
+
+/***copyright***/
+
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--lightgray);
+}
+
+footer .copyright ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .copyright p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+footer .copyright a i {
+    color: var(--pink);
+    font-size: 1.5rem;
+    margin-left: 50px;
+    text-align: center;
+    padding-right: 50px;
+}
+
+footer span {
+    color: var(--pink);
 }
