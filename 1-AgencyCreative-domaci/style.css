@@ -56,7 +56,6 @@ header {
     background-position: center;
     background-size: cover;
     color: var(--white);
-
 }
 
 header nav {
@@ -136,7 +135,8 @@ section .info div p:nth-of-type(1) {
     font-weight: 600;
 }
 
-section .info div hr {
+section .info div hr,
+section .about div hr {
     width: 20%;
     color: var(--pink);
     margin: var(--margin);
@@ -170,12 +170,10 @@ section .statistic div {
 
 section .statistic div {
     text-align: center;
-
 }
 
 section .statistic div hr {
     width: 30%;
-
 }
 
 section hr {
@@ -183,7 +181,55 @@ section hr {
     color: var(--gray);
 }
 
-section .statistic div p{
+section .statistic div p {
     font-size: 0.9rem;
     font-weight: 600;
 }
+
+/***about***/
+section .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+section .about article {
+    display: flex;
+}
+
+section .about article div{
+    margin: 70px 20px 10px 300px;
+    text-align: right;
+
+}
+
+section .about article div hr {
+    position: relative;
+    left: 600px;
+    width: 50%;
+}
+
+section .about article div p {
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: var(--line-height);
+    margin: var(--margin);
+}
+
+section .about article img {
+    width: 370px;
+    height: 250px;
+}
+section .about article:nth-child(even) div{
+    margin: 70px 300px 10px 20px;
+    text-align: left;
+}
+
+section .about article:nth-child(even){
+    flex-direction: row-reverse;
+}
+section .about article:nth-child(even) div hr{
+    position: relative;
+    left: -100px;
+    width: 50%;
+}
+
