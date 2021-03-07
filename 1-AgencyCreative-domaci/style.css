@@ -262,27 +262,28 @@ section .offer img {
 }
 
 /***gallery***/
-.gallery {
+.gallery article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: right;
 }
-.gallery p{
+.gallery article p{
     font-weight: 600;
 }
-.gallery hr{
+.gallery article hr{
     width: 30%;
     margin: var(--margin);
     color: var(--pink);    
 }
-.gallery .images {
+.gallery .images div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;  
+    background: var(--lightgray);
 }
-.gallery .images img{
+.gallery .images div img{
     width: 100%;
-    flex: 0 0 22%;
-    margin: 25px auto;
+    flex: 0 0 23%;
+    margin: 20px auto;
 }
