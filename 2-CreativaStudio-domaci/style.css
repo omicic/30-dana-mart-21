@@ -175,3 +175,12 @@ about
 .technologies .card img:hover {
   transform: scale(1.3)
 }
+
+/***jumbotron***/
+.jumbotron {
+  background-image: linear-gradient(rgb(107, 78, 113, .6), rgba(255, 255, 255, .99)), url(img/novisad.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  margin: 0 auto;
+}
