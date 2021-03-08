@@ -64,6 +64,10 @@ h6 {
   background: var(--violet);
 }
 
+.navbar-collapse {
+  flex-grow: 0;
+}
+
 /***header***/
 .headerHome {
   background-image: linear-gradient(rgb(107, 78, 113, .8), rgba(255, 255, 255, .99)), url(img/header-background.png);
@@ -183,4 +187,11 @@ about
   background-size: cover;
   height: 60vh;
   margin: 0 auto;
+}
+
+/***contact***/
+.contact i {
+  color: var(--violet);
+  font-size: 3rem;
+  padding-bottom: 30px;
 }
