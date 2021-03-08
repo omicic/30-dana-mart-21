@@ -3,15 +3,16 @@
 :root {
     --font-family: 'Raleway', sans-serif;
     --font-size: 18px;
-    --font-color: #d1d1d6;
+    --font-color: #9d9d9e;
     --button-hover: #ee5072;
-    --white: #ffffff;
+    --white: #fff;
     --button: #f32853;
-    --gray: #89898d;
+
+    --gray: #f0f0f1;
     --darkgray: #202020;
     --transition: .3s ease;
     --margin: 100px 0;
-    --padding: 10px 0;
+    --padding: 50px 0;
 }
 
 * {
@@ -48,6 +49,7 @@ button {
     padding: 20px 40px;
     border: none;
     border-radius: 5px;
+    margin: 50px 0;
 }
 
 button:hover {
@@ -58,12 +60,56 @@ a:hover {
     transition: var(--transition);
 }
 
+article {
+    flex: 0 0 40%;
+    margin-right: 30px;
+    line-height: 1.8;
+}
+
+/*article h2,
+.gallery h2 {
+    color: var(--darkgray);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}*/
+
+.intro article h2,
+.gallery h2,
+.blog h2,
+footer h2 {
+    color: var(--darkgray);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.intro article h4,
+.blog h4,
+footer h4 {
+    color: var(--font-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+header div p,
+.gallery p,
+footer div p {
+    color: var(--font-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
 /***header***/
 header {
     background: linear-gradient(rgba(29, 29, 29, 0.7), rgba(72, 72, 72, .9)), url(img/banner.jpg);
     background-position: center top;
     background-size: cover;
-    height: 120vh;
+    height: 100vh;
     background-attachment: fixed;
 }
 
@@ -116,48 +162,21 @@ header div {
     text-align: center;
 }
 
-header div h1 {
+header div h1,
+footer div h1 {
     font-size: 4rem;
     color: var(--white);
-}
-
-header div p {
-    color: var(--font-color);
-    font-size: 1.8rem;
-    padding: 50px 0;
+    margin-bottom: 30px;
 }
 
 /***intro***/
 .intro {
-    width: 55%;
+    padding: var(--padding);
+    width: 65%;
     display: flex;
     justify-content: center;
-    margin: 100px auto;
+    margin: auto;
 
-}
-
-.intro article {
-    flex: 0 0 40%;
-    margin-right: 30px;
-    line-height: 1.8;
-}
-
-.intro article h2,
-.blog h2 {
-    color: var(--darkgray);
-    font-size: 2.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-
-.intro article h4,
-.blog h4 {
-    color: var(--gray);
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 1.8;
 }
 
 .intro p {
@@ -165,37 +184,36 @@ header div p {
 }
 
 .intro p:first-child {
-
     padding-bottom: 30px;
 }
 
-/***blog***/
-.blog {
-    background-color: var(--font-color);
-    padding-top: 100px;
-}
-
-
-.blog h2,
-.blog h4 {
-    text-align: center;
-}
-
-.blog article {
-
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
+/***gallery***/
+.gallery {
+    background-color: var(--gray);
+    padding: var(--padding);
     margin: auto;
 }
 
-.blog .container {
+.gallery h2,
+.gallery p {
+    text-align: center;
+}
+
+.gallery article {
+
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+}
+
+.gallery .container {
     display: flex;
     justify-content: space-between;
     padding-top: 80px;
 }
 
-.blog .container div h3 {
+.gallery .container div h3 {
     background: var(--white);
     text-align: center;
     font-size: 1.5rem;
@@ -204,22 +222,149 @@ header div p {
     box-shadow: 0px 0px 3px var(--gray);
 }
 
-.blog .container div img {
+.gallery .container div img {
     width: 100%;
     display: block;
 }
 
-.blog .container div {
+.gallery .container div {
     flex: 0 0 48%;
 }
 
-.blog .buttons {
+.gallery .buttons {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
 }
 
-.blog button {
-    margin: 0 10px;
-    padding: 20px 40px;
+.gallery button {
+    margin-left: 10px;
+}
+
+/***blog***/
+.blog {
+    padding: var(--padding);
+    margin: auto;
+    width: 65%;
+}
+
+.blog article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: var(--margin);
+}
+
+.blog article .col {
+    display: flex;
+    flex: 0 0 47%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.blog article img {
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid var(--font-color);
+    display: block;
+}
+
+.blog article img:hover {
+    border: 8px solid var(--button);
+    transition: var(--transition);
+}
+
+.blog article .col .text {
+    flex: 0 0 66%;
+    font-weight: 100;
+}
+
+.blog article .col .img {
+    flex: 0 0 27%;
+}
+
+.blog article .col:nth-child(even) .text {
+    order: 2;
+}
+
+.blog article .col:nth-child(odd) .img {
+    order: 1;
+}
+
+.blog article .col:nth-child(odd) .text {
+    text-align: right;
+}
+
+.blog .text h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.8;
+    color: var(--darkgray);
+}
+
+.blog .text h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.blog .text p {
+    font-size: 1.1rem;
+}
+
+/***footer***/
+footer {
+    background: linear-gradient(rgba(29, 29, 29, 0.7), rgba(72, 72, 72, .9)), url(img/banner.jpg);
+
+}
+
+footer div {
+    margin: auto;
+    text-align: center;
+    padding: var(--padding);
+
+}
+
+.copyright {
+    background: var(--gray);
+    padding-top: 20px;
+}
+
+.copyright .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copyright .copy a i {
+    font-size: 2.5rem;
+    color: var(--font-color);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.copyright ul {
+    list-style: disc;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.copyright ul li {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: var(--font-color);
+    margin: 0 20px 50px 0;
+
+}
+
+.copyright ul li:nth-child(2) {
+    border-left: solid 1px rgba(144, 144, 144, 0.25);
+    border-right: solid 1px rgba(144, 144, 144, 0.25);
+    padding: 0 40px;
 }
