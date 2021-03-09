@@ -40,7 +40,7 @@ h2::after {
   content: "";
   height: 2px;
   margin: 20px 0;
-  width: 30%;
+  width: 100px;
 }
 
 /***aside***/
@@ -130,6 +130,73 @@ aside a:hover {
 }
 
 .main .about::after {
+  display: block;
+  background: #f2f2f2;
+  content: "";
+  height: 2px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.main .portfolio .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main .portfolio .row .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.main .portfolio .row .col img {
+  width: 100%;
+}
+
+.main .portfolio .row .col img:hover {
+  opacity: .6;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .portfolio .row .col h4 {
+  font-size: 1.7rem;
+  color: #9c7a97;
+  padding: 20px 0;
+}
+
+.main .portfolio .row .col p {
+  padding-bottom: 30px;
+}
+
+.main .portfolio button {
+  border: 2px solid #8bebcd;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  color: #8bebcd;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.main .portfolio button:hover {
+  border: 2px solid #9c7a97;
+  color: #9c7a97;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .portfolio::after {
   display: block;
   background: #f2f2f2;
   content: "";
