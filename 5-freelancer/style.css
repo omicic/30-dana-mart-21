@@ -107,6 +107,8 @@ aside a:hover {
       -ms-flex: 2;
           flex: 2;
   padding: 40px;
+  overflow: scroll;
+  height: 100vh;
 }
 
 .main .about button {
