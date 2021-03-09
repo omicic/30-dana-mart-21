@@ -3,14 +3,14 @@
 $gray: #303633;
 $lightgray: #f2f2f2;
 $green: #8bebcd;
-$ping: #9c7a97;
+$pink: #9c7a97;
 $headings: 'Source Sans Pro',
 sans-serif;
 $text: 'Lato',
 sans-serif;
 $transition: .3s ease;
 $font-size: 16px;
-$whit: #ffffff;
+$white: #ffffff;
 
 /***basic styles***/
 @at-root * {
@@ -24,6 +24,8 @@ body {
     font-size: $font-size;
     color: $gray;
     line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1,
@@ -33,4 +35,56 @@ h4,
 h5,
 h6 {
     font-family: $headings;
+}
+
+/***aside***/
+aside {
+    flex: 1;
+    background-image: linear-gradient(rgba($gray, .8), rgba($pink, .8)), url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 60px;
+    text-align: right;
+
+    img {
+        border: 5px solid $pink;
+        border-radius: 50%;
+        width: 50%;
+
+    }
+
+    h1 {
+        font-weight: 300;
+        color: $white;
+        padding: 30px 0;
+
+        span {
+            color: $green;
+            font-weight: 700;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+    }
+
+    a {
+        color: $green;
+        margin-left: 20px;
+        font-size: 2rem;
+
+        &:hover {
+            color: $white;
+            transition: $transition;
+        }
+    }
+
+}
+
+/**main***/
+.main {
+    flex: 2;
 }
