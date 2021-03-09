@@ -12,6 +12,33 @@ $transition: .3s ease;
 $font-size: 16px;
 $white: #ffffff;
 
+/***mixin***/
+@mixin btn {
+    border: 2px solid $green;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: transparent;
+    color: $green;
+    cursor: pointer;
+    margin-top: 30px;
+
+    &:hover {
+        border: 2px solid $pink;
+        color: $pink;
+        transition: $transition;
+    }
+}
+
+@mixin line {
+    display: block;
+    background: $lightgray;
+    content: "";
+    height: 2px;
+    margin: 20px auto;
+    width: 100%;
+}
+
 /***basic styles***/
 @at-root * {
     margin: 0;
@@ -37,6 +64,22 @@ h6 {
     font-family: $headings;
 }
 
+h2 {
+    font: size 2.5rem;
+    font-weight: 700;
+
+    &::after {
+        display: block;
+        background: $pink;
+        content: "";
+        height: 2px;
+        margin: 20px 0;
+        width: 30%;
+    }
+}
+
+
+
 /***aside***/
 aside {
     flex: 1;
@@ -55,7 +98,6 @@ aside {
         border: 5px solid $pink;
         border-radius: 50%;
         width: 50%;
-
     }
 
     h1 {
@@ -87,4 +129,17 @@ aside {
 /**main***/
 .main {
     flex: 2;
+    padding: 40px;
+
+    .about {
+        button {
+            @include btn;
+        }
+
+        &::after {
+            @include line;
+        }
+
+
+    }
 }
