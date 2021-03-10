@@ -98,6 +98,14 @@ aside {
     padding-right: 60px;
     text-align: right;
 
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+        align-items: center;
+        padding-right: 0;
+        text-align: center;
+        height: 80vh;
+    }
+
     img {
         border: 5px solid $pink;
         border-radius: 50%;
@@ -136,6 +144,11 @@ aside {
     overflow: scroll;
     height: 100vh;
 
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+        height: auto;
+    }
+
     .about {
         button {
             @include btn;
@@ -155,6 +168,11 @@ aside {
 
             .col {
                 flex: 0 0 48%;
+
+                @media(max-width: 768px) {
+                    flex: 0 0 100%;
+
+                }
 
                 img {
                     width: 100%;
@@ -194,7 +212,6 @@ aside {
             flex-wrap: wrap;
             justify-content: space-between;
 
-
             .prva {
                 flex: 0 0 58%
             }
@@ -208,12 +225,17 @@ aside {
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
+            flex-wrap: wrap;
 
             form {
                 flex: 0 0 68%;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+
+                @media(max-width: 768px) {
+                    flex: 0 0 100%;
+                }
 
                 input {
                     flex: 0 0 48%;
@@ -246,9 +268,19 @@ aside {
             .contact {
                 flex: 0 0 28%;
 
+                @media(max-width: 768px) {
+                    margin-top: 40px;
+                    flex: 0 0 100%;
+                }
+
                 li {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     line-height: 2.5;
+
+                    @media(max-width: 768px) {
+                        font-size: 1rem;
+                        line-height: 1.5;
+                    }
 
 
                     i {
@@ -256,7 +288,6 @@ aside {
                     }
                 }
             }
-
         }
     }
 
