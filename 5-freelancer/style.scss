@@ -55,6 +55,10 @@ body {
     flex-wrap: wrap;
 }
 
+ul {
+    list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -181,9 +185,81 @@ aside {
         &::after {
             @include line;
         }
-
-
-
     }
+
+    .contact {
+        .row {
+            display: flex;
+            flex: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+            .prva {
+                flex: 0 0 58%
+            }
+        }
+    }
+
+    footer {
+        padding-bottom: 50px;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+
+            form {
+                flex: 0 0 68%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                input {
+                    flex: 0 0 48%;
+                    padding: 10px;
+                    background: $lightgray;
+                    border: none;
+                    margin-bottom: 30px;
+                }
+
+                textarea {
+                    flex: 0 0 100%;
+                    background: $lightgray;
+                    border: none;
+                }
+
+                button {
+                    @include btn;
+                    background: $pink;
+                    border: 2px solid $pink;
+                    color: $white;
+
+                    &:hover {
+                        background: $green;
+                        border: 2px solid $green;
+                        color: $white;
+                    }
+                }
+            }
+
+            .contact {
+                flex: 0 0 28%;
+
+                li {
+                    font-size: 1.2rem;
+                    line-height: 2.5;
+
+
+                    i {
+                        color: $pink;
+                    }
+                }
+            }
+
+        }
+    }
+
+
 
 }
