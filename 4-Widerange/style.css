@@ -23,7 +23,7 @@ body {
     font-family: var(--font-family);
     color: var(--primary);
     background: var(--accents);
-    padding: 0 20px 100px 20px;
+    padding: 0 20px 0 20px;
     font-size: var(--font-siye);
 }
 
@@ -61,7 +61,7 @@ header {
     background-image: url(img/bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     flex-direction: column;
     justify-content: space-between;
 
@@ -131,12 +131,12 @@ article .icons i {
 }
 
 .service .container div {
-    flex: 0 0 24%;
+    flex: 0 0 23%;
 }
 
 .service .container div h3 {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 30px;
 
@@ -149,8 +149,9 @@ article .icons i {
 
 .service .container div p {
     font-weight: 300;
-    margin-bottom: 50px;
-    line-height: 180%;
+    line-height: 1.5;
+    font-size: .9rem;
+    text-align: justify;
 }
 
 /***blog***/
@@ -163,7 +164,7 @@ article .icons i {
 
 .blog .container {
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -198,13 +199,12 @@ article .icons i {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: auto 10px auto 0;
-
-
 }
 
 .blog p {
     color: #929292;
     padding-top: 20px;
+    font-size: .9rem;
 }
 
 button {
@@ -227,5 +227,5 @@ button:hover {
 /***footer***/
 footer {
     text-align: center;
-    margin: 50px;
+    margin: 50px auto;
 }
